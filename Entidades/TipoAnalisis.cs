@@ -14,11 +14,14 @@ namespace Entidades
         public int TipoId { get; set; }
         public string Descripcion { get; set; }
 
+        public decimal Precio { get; set; }
+
 
         public TipoAnalisis()
         {
             this.TipoId = 0;
             this.Descripcion = string.Empty;
+            this.Precio = 0;
         }
 
 

@@ -10,7 +10,7 @@ namespace BLL
 {
     class RepositorioAnalisis : RepositorioBase<Analisis>
     {
-     /*   public override Analisis Buscar(int id)
+        public override Analisis Buscar(int id)
         {
             Analisis analisis = new Analisis();
             try
@@ -65,6 +65,7 @@ namespace BLL
                 throw;
             }
             return paso;
-        }*/
+        }
+
     }
 }

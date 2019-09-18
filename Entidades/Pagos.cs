@@ -23,5 +23,9 @@ namespace Entidades
             Detalle = new List<PagosDetalle>();
 
         }
+        public void AgregarDetalle(int analisisId, decimal Cantidad)
+        {
+            this.Detalle.Add(new PagosDetalle(analisisId, Cantidad));
+        }
     }
 }

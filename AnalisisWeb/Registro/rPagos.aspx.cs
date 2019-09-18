@@ -167,13 +167,21 @@ namespace AnalisisWeb.Registro
             Pagos pagos = new Pagos();
 
             pagos = (Pagos)ViewState["Pagos"];
-            pagos.Detalle.Add(new PagosDetalle(Convert.ToInt32(AnalisisDropDown.SelectedItem), Convert.ToInt32(CantidadTextBox.Text)));
+            pagos.Detalle.Add(new PagosDetalle(Convert.ToInt32(AnalisisDropDown.SelectedValue),Convert.ToDecimal(CantidadTextBox.Text)));
 
             ViewState["Detalle"] = pagos.Detalle;
             this.BindGrid();
-
+            
            
             CantidadTextBox.Text = string.Empty;
+        }
+
+   
+    
+
+        protected void AnalisisDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BalanceTextBox.Text = PagosIdTextBox.Text;
         }
     }
 }

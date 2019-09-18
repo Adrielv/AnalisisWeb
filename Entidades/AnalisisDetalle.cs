@@ -17,7 +17,11 @@ namespace Entidades
             public string Analisis { get; set; }
             public string Resultado { get; set; }
 
-            public AnalisisDetalle()
+            public virtual TipoAnalisis TipoAnalisis { get; set; }
+
+            public int TipoId { get; set; }
+
+        public AnalisisDetalle()
             {
              this.AnalisisDetalleId = 0;
             this.Analisis = string.Empty;

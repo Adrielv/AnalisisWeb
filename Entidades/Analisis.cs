@@ -16,7 +16,8 @@ namespace Entidades
             public DateTime Fecha { get; set; }
             public string Paciente { get; set; }
 
-            public decimal Balance { get; set; }
+             public decimal Monto { get; set; }
+             public decimal Balance { get; set; }
             public virtual List<AnalisisDetalle> Detalle { get; set; }
 
             public Analisis()
@@ -24,7 +25,8 @@ namespace Entidades
                 AnalisisId = 0;
                 Fecha = DateTime.Now;
                 Paciente = string.Empty;
-                 Balance = 0;
+                Balance = 0;
+                Monto = 0;
                 Detalle = new List<AnalisisDetalle>();
             }
 
@@ -36,10 +38,10 @@ namespace Entidades
                  this.Balance = Balance;
                 this.Fecha = Fecha;
             }
-          /*  public void AgregarDetalle(int detalleAnalisisID, int analisisID, int tipoAnalisisID, string resultado)
+            public void AgregarDetalle(string descripcion, string resultado)
             {
-                this.Detalle.Add(new AnalisisDetalle(detalleAnalisisID, analisisID, tipoAnalisisID, resultado));
-            }*/
+                this.Detalle.Add(new AnalisisDetalle(resultado,descripcion));
+            }
         }
     }
 

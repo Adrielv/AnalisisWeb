@@ -85,6 +85,15 @@ namespace AnalisisWeb.Registro {
         protected global::System.Web.UI.WebControls.DropDownList AnalisisDropDown;
         
         /// <summary>
+        /// BalanceTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BalanceTextBox;
+        
+        /// <summary>
         /// CantidadTextBox control.
         /// </summary>
         /// <remarks>
